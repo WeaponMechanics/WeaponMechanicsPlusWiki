@@ -27,7 +27,7 @@ Here are valid operations:
 ```yaml
 Modifier:
   Damage_Modifier:
-    Damage: <DoubleModifier>
+    Base_Damage: <DoubleModifier>
     Explosion_Damage: <DoubleModifier>
     Fire_Ticks: <IntModifier>
     Armor_Damage: <IntModifier>

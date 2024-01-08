@@ -54,6 +54,7 @@ Modifier:
   Shoot_Modifier:
     Projectile_Amount: <IntModifier>
     Projectile_Speed: <DoubleModifier>
+    Fully_Automatic_Shots_Per_Second: <IntModifier>
     Add_Mechanics: <Mechanics>  # or use Replace_Mechanics
 
   Projectile_Modifier:

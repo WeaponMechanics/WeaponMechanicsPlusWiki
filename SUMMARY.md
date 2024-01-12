@@ -6,3 +6,4 @@
 * [Modifiers](modifiers.md)
 * [Armor Modifiers](armor-modifiers.md)
 * [Placeholders](placeholders.md)
+* [Other](other.md)

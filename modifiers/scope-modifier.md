@@ -8,6 +8,7 @@ description: Modifies the Scope section of the config
   Scope_Modifier:
     Zoom_Amount: <DoubleModifier>
     Night_Vision: <true/false>
+    Pumpkin_Overlay: <true/false>
     Zoom_Stacking: 
       - <DoubleModifier>
       - <DoubleModifier>
@@ -21,6 +22,14 @@ Modifies the [Zoom\_Amount](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapo
 ### Night\_Vision
 
 Modifies the [Night\_Vision](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/scope#night\_vision "mention") of the scope. Use `true` to force enable night vision. Use `false` to force disable night vision. This can be used to create night vision scopes.&#x20;
+
+### Pumpkin\_Overlay
+
+{% hint style="warning" %}
+This requires [WeaponMechanicsCosmetics](https://www.spigotmc.org/resources/weaponmechanicscosmetics-guns-in-minecraft-1-12-2-1-20-4.104539/) to be installed in order to work.
+{% endhint %}
+
+Modifies the [Pumpkin\_Overlay](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/scope#pumpkin\_overlay "mention") of the scope. Use `true` to force enable pumpkin scope overlay. Use `false` to force disable pumpkin scope overlay.
 
 ### Zoom\_Stacking
 

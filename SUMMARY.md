@@ -1,9 +1,15 @@
 # Table of contents
 
 * [Home](README.md)
-* [Firemode](firemode.md)
 * [Attachment](attachment.md)
-* [Modifiers](modifiers.md)
+* [Modifiers](modifiers/README.md)
+  * [Damage Modifier](modifiers/damage-modifier.md)
+  * [Shoot Modifier](modifiers/shoot-modifier.md)
+  * [Projectile Modifier](modifiers/projectile-modifier.md)
+  * [Reload Modifier](modifiers/reload-modifier.md)
+  * [Scope Modifier](modifiers/scope-modifier.md)
+  * [Explosion Modifier](modifiers/explosion-modifier.md)
 * [Armor Modifiers](armor-modifiers.md)
+* [Firemode](firemode.md)
 * [Placeholders](placeholders.md)
 * [Other](other.md)

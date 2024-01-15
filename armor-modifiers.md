@@ -1,10 +1,9 @@
 # Armor Modifiers
 
-Armor Modifiers are similar to [modifiers.md](modifiers.md "mention"), but instead of modifying weapons, armor modifiers change your armor from ArmorMechanics. Before using ArmorModifiers, you should be familiar with the [#doublemodifier](modifiers.md#doublemodifier "mention") and the [#intmodifier](modifiers.md#intmodifier "mention").
+Armor Modifiers are similar to [modifiers](modifiers/ "mention"), but instead of modifying weapons, armor modifiers change your armor from ArmorMechanics. Before using ArmorModifiers, you should be familiar with the [#doublemodifier](modifiers/#doublemodifier "mention") and the [#intmodifier](modifiers/#intmodifier "mention").
 
-```yaml
-Bullet_Resistance: <DoubleModifier>
-Explosion_Resistance: <DoubleModifier>
-Equip_Mechanics: <Mechanics> # Or use Replace_Equip_Mechanics
-Dequip_Mechanics: <Mechanics> # Or use Replace_Equip_Mechanics
-```
+<pre class="language-yaml"><code class="lang-yaml">Bullet_Resistance: &#x3C;DoubleModifier>
+Explosion_Resistance: &#x3C;DoubleModifier>
+<strong>Equip_Mechanics: &#x3C;Mechanics> # Or use Replace_Equip_Mechanics
+</strong>Dequip_Mechanics: &#x3C;Mechanics> # Or use Replace_Equip_Mechanics
+</code></pre>

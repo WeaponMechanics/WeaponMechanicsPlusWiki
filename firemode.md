@@ -18,7 +18,7 @@ Firemodes are similar to the selective fire feature from WeaponMechanics, but in
 
 ## Trigger
 
-The [Trigger](http://127.0.0.1:5000/s/nwFaVZ2SN7YPdxsP5G6f/trigger "mention") to cause the firemode switch. I recommend using `SWAP_HANDS`, as it is usually intuitive for players.
+The [Trigger](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/trigger "mention") to cause the firemode switch. I recommend using `SWAP_HANDS`, as it is usually intuitive for players.
 
 ## Mechanics
 
@@ -35,12 +35,12 @@ This defines the:
 The format is `<weapon-title> <ammo> <attachment>`.&#x20;
 
 {% hint style="warning" %}
-`<ammo>`, in this case, does not refer to an [Ammo](http://127.0.0.1:5000/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/reload/ammo "mention"), this is _completely separate_. Instead, this is simply a unique id. This unique id decides which firemodes can share ammo. For example, for an `m4a1`, `m4a1_burst`, and `m4a1_grenade`, you will want the `m4a1` and `m4a1_burst` to share the default ammo, and the `m4a1_grenade` to use its own unique ammo. See [#example-1](firemode.md#example-1 "mention")&#x20;
+`<ammo>`, in this case, does not refer to an [Ammo](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/reload/ammo "mention"), this is _completely separate_. Instead, this is simply a unique id. This unique id decides which firemodes can share ammo. For example, for an `m4a1`, `m4a1_burst`, and `m4a1_grenade`, you will want the `m4a1` and `m4a1_burst` to share the default ammo, and the `m4a1_grenade` to use its own unique ammo. See [#example-1](firemode.md#example-1 "mention")&#x20;
 {% endhint %}
 
 ### Example 1
 
-Let's look at an example for the `m4a1`. We will have the `m4a1` and `m4a1_burst` share the same ammo, but the `m4a1_grenade` will require an attachment and use its own ammo. For simplicity, these weapons will be missing the required [Info](http://127.0.0.1:5000/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/info "mention") and [Shoot](http://127.0.0.1:5000/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot "mention") sections.&#x20;
+Let's look at an example for the `m4a1`. We will have the `m4a1` and `m4a1_burst` share the same ammo, but the `m4a1_grenade` will require an attachment and use its own ammo. For simplicity, these weapons will be missing the required [Info](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/info "mention") and [Shoot](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot "mention") sections.&#x20;
 
 When somebody is holding an `m4a1_burst` weapon, and they switch to the next weapon, WeaponMechanicsPlus will check to see if the weapon item has a `grenade_launcher` attached to it. If it does, **great;** we'll switch to `m4a1_grenade`. Otherwise, that fire mode gets skipped and we reset back to `m4a1`.&#x20;
 
@@ -66,7 +66,7 @@ m4a1_grenade:
 
 ### Example 2
 
-Let's look at some example config for a magic spell. We will have 3 spells, `fireball`, `heal`, and `laser`. Again, for simplicity, these configs will be missing the required [Info](http://127.0.0.1:5000/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/info "mention") and [Shoot](http://127.0.0.1:5000/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot "mention") sections.&#x20;
+Let's look at some example config for a magic spell. We will have 3 spells, `fireball`, `heal`, and `laser`. Again, for simplicity, these configs will be missing the required [Info](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/info "mention") and [Shoot](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot "mention") sections.&#x20;
 
 ```yaml
 fireball:

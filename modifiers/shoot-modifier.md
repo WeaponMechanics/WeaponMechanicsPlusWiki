@@ -12,31 +12,41 @@ description: Modifies the shoot config of a weapon
     Override_Spread: <Spread>
     Fully_Automatic_Shots_Per_Second: <IntModifier>
     Add_Mechanics: <Mechanics>  # or use Replace_Mechanics
+    Recoil_Modifier:
+      Mean_X: <DoubleModifier>
+      Mean_Y: <DoubleModifier>
+      Variance_X: <DoubleModifier>
+      Variance_Y: <DoubleModifier>
+      Speed: <DoubleModifier>
+      Damping: <DoubleModifier>
+      Damping_Recovery: <DoubleModifier>
+      Smoothing_Factor: <DoubleModifier>
+      
 ```
 
 ### Projectile\_Amount
 
-Modifies the [Projectiles\_Per\_Shot](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot#projectiles\_per\_shot "mention"), the number of projectiles launched for each shot. This is typically used for shotguns, to increase the amount of pellets/shrapnel.&#x20;
+Modifies the [Projectiles\_Per\_Shot](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot#projectiles_per_shot "mention"), the number of projectiles launched for each shot. This is typically used for shotguns, to increase the amount of pellets/shrapnel.&#x20;
 
 ### Projectile\_Speed
 
-Modifies the [Projectile\_Speed](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot#projectile\_speed "mention"), the speed, in $$\frac{m}{s}$$, that the projectile should be launched at. You can use this on suppressor attachments to decrease the muzzle velocity of the launched projectile(s).
+Modifies the [Projectile\_Speed](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot#projectile_speed "mention"), the speed, in $$\frac{m}{s}$$, that the projectile should be launched at. You can use this on suppressor attachments to decrease the muzzle velocity of the launched projectile(s).
 
 ### Base\_Spread
 
-Modifies the [Base\_Spread](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot/spread#base\_spread "mention"), the random variations in bullet path. Increasing the spread will make the gun harder to use because bullets will fly more randomly.&#x20;
+Modifies the [Base\_Spread](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot/spread#base_spread "mention"), the random variations in bullet path. Increasing the spread will make the gun harder to use because bullets will fly more randomly.&#x20;
 
 ### Override\_Spread
 
 {% hint style="warning" %}
-In general, you should try to use the [#base\_spread](shoot-modifier.md#base\_spread "mention") feature instead of `Override_Spread`. This is to make it easier to configure multiple attachments that modify spread at the same time.&#x20;
+In general, you should try to use the [#base\_spread](shoot-modifier.md#base_spread "mention") feature instead of `Override_Spread`. This is to make it easier to configure multiple attachments that modify spread at the same time.&#x20;
 {% endhint %}
 
 Completely overrides the [Spread](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot/spread "mention") of the weapon.
 
 ### Fully\_Automatic\_Shots\_Per\_Second
 
-Modifies the [Fully\_Automatic\_Shots\_Per\_Second](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot#fully\_automatic\_shots\_per\_second "mention") of the weapon. For non-automatic weapons (semi/burst weapons), the starting value will be 0.&#x20;
+Modifies the [Fully\_Automatic\_Shots\_Per\_Second](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot#fully_automatic_shots_per_second "mention") of the weapon. For non-automatic weapons (semi/burst weapons), the starting value will be 0.&#x20;
 
 <details>
 
@@ -85,3 +95,16 @@ In this example, we replace the original mechanics (and thus, the original sound
 ```
 
 </details>
+
+### Recoil\_Modifier
+
+Lets you modify the recoil of the weapon. This can be used to make recoil more/less "snappy," which allows finer control over balancing your guns.
+
+All config options match 1 to 1 with the config options in the [base recoil section](https://app.gitbook.com/s/nwFaVZ2SN7YPdxsP5G6f/weapon-modules/shoot/recoil) of your gun. In general, modifying just the speed value can be enough to increase/decrease recoil.
+
+```yaml
+    Shoot_Modifier:
+      Recoil_Modifier:
+        # ~20% increase in initial recoil
+        Speed: MULTIPLY 1.20
+```
